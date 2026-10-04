@@ -1,0 +1,169 @@
+body {
+	background-color: #F8F8F7;
+	font-family: Lora, serif;
+	color:#00A676;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+h1, h2 {
+	font-family: Roboto;
+	font-weight: bold;
+	color: #DF9A57;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 800;
+	font-family: Roboto;
+	text-align: center;
+
+}
+h2{
+	background-color: none;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+ul{
+	text-justify: center;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #531CB3;
+	font-size: 13px;
+}
+a:hover {
+	color: seagreen;
+}
+
+#Starters {
+  & .starters-card {
+    width: 150px;
+    height: 150px;            /* même valeur = carré */
+    box-sizing: border-box;
+    margin: 0;                /* pas de auto : la div reste à gauche */
+    display: flex;
+    flex-direction: column;   /* empile l'icône puis le texte */
+    align-items: center;      /* centre horizontalement */
+    justify-content: center;  /* centre verticalement */
+    gap: 10px; 
+    align-items: center;      /* centre l'icône verticalement */
+    justify-content: center;  /* et horizontalement */
+    background: white;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+
+  & .svg-inline--fa {
+    font-size: 50px;         /* réduite pour tenir dans le carré */
+  					}
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+	gap: 20px;
+  		}
+  & p{ 
+  		justify-content: center;
+  		align-items: center;
+  		text-align: center;
+  		margin: 0;
+
+  	 }
+}
+
+#Ratatouille-card {
+	width: 250px;
+    height: 250px;            /* même valeur = carré */
+    box-sizing: border-box;
+    margin: 0;                /* pas de auto : la div reste à gauche */
+    display: flex;
+    flex-direction: column;   /* empile l'icône puis le texte */
+    align-items: center;      /* centre horizontalement */
+    justify-content: center;  /* centre verticalement */
+    gap: 10px;
+    background: white;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+
+    & .svg-inline--fa {
+    font-size: 100px;         /* réduite pour tenir dans le carré */
+  					}
+  	& p{ 
+  		justify-content: center;
+  		align-items: center;
+  		text-align: center;
+  		margin: 0;
+
+  	 }
+}
+
+#Desserts{
+
+	& .Desserts-card {
+	width: 150px;
+    height: 150px;            /* même valeur = carré */
+    box-sizing: border-box;
+    margin: 0;                /* pas de auto : la div reste à gauche */
+    display: flex;
+    flex-direction: column;   /* empile l'icône puis le texte */
+    align-items: center;      /* centre horizontalement */
+    justify-content: center;  /* centre verticalement */
+    gap: 10px; 
+    align-items: center;      /* centre l'icône verticalement */
+    justify-content: center;  /* et horizontalement */
+    background: white;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+	}
+
+	 & .svg-inline--fa {
+    font-size: 50px;         /* réduite pour tenir dans le carré */
+  					}
+
+  	& ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+	gap: 20px;
+  		}
+
+  	& p{ 
+  		justify-content: center;
+  		align-items: center;
+  		text-align: center;
+  		margin: 0;
+
+  	 }
+}
+.Common-section {
+  width: 600px;            /* même largeur pour les deux */
+  box-sizing: border-box;  /* le padding est inclus dans les 600px */
+  max-width: 100%;
+  padding: 60px;
+  margin: 30px auto;
+  background: white;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  
+}
+
+#Starters ul,
+#Desserts ul {
+  flex-wrap: no wrap;     /*Inséré grâce à l'IA pour garder les icones sur une seule ligne*/
+}
+
+@media (max-width: 760px) {
+  .Common-section {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Common-section {
+    padding: 20px;
+  }
+}
